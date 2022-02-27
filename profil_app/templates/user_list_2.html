@@ -1,0 +1,13 @@
+{% for i in users %}
+  <tr>
+    <td>{{ i.username }}</td>
+    <td>{{ i.email}}</td>
+  
+    <td>  
+      <button class="btn btn-info show-form-update" data-url="{% url 'users_update' i.id %}">
+      <span class="glyphicon glyphicon-pencil"></span>
+      Modifier
+      </button>
+    </td>
+  </tr>
+{% endfor %}

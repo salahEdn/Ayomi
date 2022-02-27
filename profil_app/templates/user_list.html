@@ -1,0 +1,19 @@
+{% extends 'base.html' %} {% block content %}
+<h1 class="page-header">Mes informations </h1>
+<table class="table" id="user-table">
+  <thead>
+    <tr>
+      <th>Nom d'utilisateur</th>
+      <th>Adresse email</th>
+      <th>Modifier vos informations</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% include 'user_list_2.html' %} 
+  </tbody>
+</table>
+<div class="modal fade" id="modal-user">
+  <div class="modal-dialog">
+    <div class="modal-content"></div>
+  </div>
+</div> {% endblock %}
